@@ -1,0 +1,317 @@
+:root {
+  --body-color:#000;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+  background-color: var(--body-color);
+}
+a {
+   cursor: pointer;
+   text-decoration: none;
+}
+a:hover {
+   color: cadetblue!important;
+   transition: all 0.5s !important;
+}
+/* Side Menu */
+
+.side-menu {
+  width: 300px;
+  height: 100vh;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.inner-side-menu {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.inner-side-menu li a {
+   font-size: large;
+}
+.left-section {
+  width: 80%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.inner-left-bottom span {
+   display: block;
+   font-size: 1rem;
+   color: #989898;
+}
+.inner-left-bottom a {
+   padding: 0px 5px ;
+   font-size: 15px;
+   color: #989898;
+}
+.inner-left-bottom a:hover {
+   color: cadetblue;
+}
+.right-section {
+   width: 20%;
+   height: 100vh;
+   padding: 0;
+   margin: 0;
+ }
+.logo-img {
+   width: 40px;
+   height: 40px;
+   margin: 0px auto;;
+}
+.right-section {
+
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   text-align: center;
+   padding: 30px 0px;
+}
+.links-right-section {
+   flex-direction: column;
+}
+.right-section a , i{
+   color:#22252a;
+}
+#closeSideMenu {
+   cursor: pointer;
+}
+
+
+
+
+
+
+
+#search {
+   width: 100% !important;
+   height: 100% !important;
+   display: flex;
+   margin: 0px auto !important;
+   /* background-color: rgba(195, 63, 63, 0.358) !important; */
+   color: #fff !important;
+}
+
+
+
+#categories {
+   width: 100% !important;
+   height: 100% !important;
+   display: flex;
+   margin: 0px !important;
+   background-color: rgba(0, 0, 0, 0.358);
+   color: #fff !important;
+}
+
+
+#meals {
+   width: 100% !important;
+   height: 100% !important;
+   display: flex;
+   margin: 0px !important;
+   background-color: rgba(0, 0, 0, 0.5);
+   color: #fff !important;
+}
+
+#homeMealView {
+   width: 100% !important;
+   height: 100% !important;
+   display: flex;
+   margin: 0px !important;
+   background-color: rgba(0, 0, 0, 0.5);
+   color: #fff !important;
+}
+
+#area {
+   width: 100% !important;
+   height: 100% !important;
+   display: flex;
+   margin: 0px !important;
+   background-color: rgba(88, 13, 179, 0.5);
+   color: #fff !important;
+}
+
+#area i .item{
+   padding: 0px !important;
+   margin: 0px !important;
+}
+
+#area i {
+   width: 100% !important;
+}
+#areaFood {
+   width: 100% !important;
+   height: 100% !important;
+   display: flex;
+   margin: 0px !important;
+   background-color: rgba(107, 208, 48, 0.5);
+   color: #fff !important;
+}
+
+
+#ingredients {
+      width: 100% !important;
+   height: 100% !important;
+   display: flex;
+   margin: 0px !important;
+   background-color: rgba(124, 91, 132, 0.5);
+   color: #fff !important;
+}
+#ingredientsFood {
+   width: 100% !important;
+height: 100% !important;
+display: flex;
+margin: 0px !important;
+background-color: rgba(9, 107, 182, 0.5);
+color: #fff !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Main */
+
+.item {
+   padding: 15px;
+}
+
+/* Food View */
+/* .recipes-info h5 {
+   background: #d4edd9;
+   padding: 5px;
+   font-size: 16px;
+   color: #000;
+   border-radius:5px;
+
+}
+.foodView article p {
+   font-size: 16px;
+}
+.tags span{
+   background: #f9d7d9;
+   padding: 6px;
+   font-size: 16px;
+   color: #000;
+   border-radius:5px;
+   margin: 0px 3px;
+} */
+
+/* Contact US */
+#contactUs .row  {
+   width: 80%;
+   margin: 0px auto;
+}
+.search-name {
+   background-color: #000;
+}
+.search-name input{
+   width: 80% !important;
+
+   border: 0px;
+   border-bottom: 2px solid gray;
+   background-color: transparent;
+   text-align: center;
+   font-size: 18px;
+   margin: 30px 0px;
+   line-height: 3rem;
+   color: #f9d7d9;
+
+}
+
+
+
+
+.name,.email,.phone,.age,.pass,.re-pass {
+   background-color: #000;
+}
+.name input ,.email input ,.phone input ,.age input ,.pass input ,.re-pass input {
+   width: 80% !important;
+
+   border: 0px;
+   border-bottom: 2px solid gray;
+   background-color: transparent;
+   text-align: center;
+   font-size: 18px;
+   /* margin: 30px 0px; */
+   line-height: 3rem;
+   color: #f9d7d9;
+
+}
+
+.Valid{
+   border: 1px solid rgb(0, 255, 106) !important;
+}
+
+.notValid{
+   border: 1px solid red !important;
+}
+
+
+
+/* Search */
+.search-name {
+   background-color: #000;
+}
+.search-name input{
+   width: 80% !important;
+
+   border: 0px;
+   border-bottom: 2px solid gray;
+   background-color: transparent;
+   text-align: center;
+   font-size: 18px;
+   margin: 30px 0px;
+   line-height: 3rem;
+   color: #f9d7d9;
+
+}
+
+.search-letter {
+   background-color: #000;
+}
+.search-letter input{
+   width: 80% !important;
+   border: 0px;
+   border-bottom: 2px solid gray;
+   background-color: transparent;
+   text-align: center;
+   font-size: 18px;
+   margin: 30px 0px;
+   line-height: 3rem;
+   color: #f9d7d9;
+}
+.search-name input:focus {
+   outline:1px solid rgba(0, 17, 255,0.3);
+
+}
+.search-letter input:focus {
+   outline:1px solid rgba(0, 17, 255,0.3);
+
+}
+
+
+.show {
+   display: inline-block !important;
+}
+.hide {
+   display: none !important;
+}

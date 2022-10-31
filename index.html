@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Warang+Citi&display=swap"rel="stylesheet"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Yummy</title>
+  </head>
+
+  <body>
+<!-- Side Menu -->
+    <div id="sideMenu" class="side-menu">
+      <div class="inner-side-menu">
+        <section class="left-section container bg-black text-danger">
+          <div class="inner-left-top">
+            <ul class="list-unstyled">
+              <li class="p-2 my-2 ms-2">
+                <a class="search-link text-decoration-none text-white">
+                  Search</a
+                >
+              </li>
+              <li class="p-2 my-2 ms-2">
+                <a class="categories-link text-decoration-none text-white">
+                  Categories</a
+                >
+              </li>
+              <li class="p-2 my-2 ms-2">
+                <a class="area-link text-decoration-none text-white"> Area</a>
+              </li>
+              <li class="p-2 my-2 ms-2">
+                <a class="ingredients-link text-decoration-none text-white">
+                  Ingredients</a
+                >
+              </li>
+              <li class="p-2 my-2 ms-2">
+                <a class="contact-us-link text-decoration-none text-white">
+                  Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="inner-left-bottom ps-3 py-5">
+            <div class="social-links py-3">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fas fa-globe"></i></a>
+            </div>
+            <span>Copyright Â© 2019 All Rights Reserved.</span>
+          </div>
+        </section>
+
+        <section class="right-section container text-light">
+          <img class="logo-img" src="img/logo.png" alt="" />
+          <i
+            id="closeSideMenu"
+            class="closeSideMenu d-none fa fa-times fs-4"
+          ></i>
+          <i
+            id="closeSideMenu2"
+            class="closeSideMenu fa fa-align-justify fs-4"
+          ></i>
+          <div class="links-right-section d-flex">
+            <a href=""><i class="fas fa-globe"></i></a>
+            <a href=""><i class="fas fa-share-alt"></i></a>
+          </div>
+        </section>
+      </div>
+    </div>
+<!-- Search -->
+    <div id="search" class="d-none demo container bg-black">
+      <div class=" mx-auto  w-75 mt-5">
+        <div class="row bg-danger">
+          <div
+            oninput=""
+            class="search-name col-md-6 d-flex justify-content-center"
+          >
+            <input id="searchName" type="search" placeholder="Search By Name" />
+          </div>
+          <div
+            oninput=""
+            class="search-letter col-md-6 d-flex justify-content-center"
+          >
+            <input
+              id="searchLetter"
+              type="search"
+              placeholder="Search By First Letter"
+              maxlength="1"
+            />
+          </div>
+        </div>
+        <div class="item-container row"></div>
+      </div>
+    </div>
+<!-- Landing Design -->
+    <section id="home" class="mt-5 mx-0 p-4">
+      <div class="container w-75 mt-5">
+        <div class="row mt-5 text-light"></div>
+      </div>
+    </section>
+<!-- Categories -->
+    <section id="categories" class="d-none demo mt-5 mx-0 p-4">
+      <div class="container w-75 mt-5">
+        <div class="row mt-5"></div>
+      </div>
+    </section>
+<!-- Meals -->
+    <section id="meals" class="d-none demo mt-5 mx-0 p-4">
+      <div class="container w-75 mt-5">
+        <div class="row mt-5"></div>
+      </div>
+    </section>
+<!-- Area -->
+    <section id="area" class="d-none demo text-center mt-5 mx-0 p-4">
+      <div class="container w-75 mt-5">
+        <div class="row mt-5"></div>
+      </div>
+    </section>
+<!-- Area Meals -->
+    <section id="areaFood" class="d-none demo mt-5 mx-0 p-4">
+      <div class="container w-75 mt-5">
+        <div class="row mt-5"></div>
+      </div>
+    </section>
+<!-- ingredients -->
+    <section id="ingredients" class="d-none demo mt-5 mx-0 p-4">
+      <div class="container w-75 mt-5">
+        <div class="row mt-5"></div>
+      </div>
+    </section>
+<!-- ingredients Meals -->
+    <section id="ingredientsFood" class="d-none demo mt-5 mx-0 p-4">
+      <div class="container w-75 mt-5">
+        <div class="row mt-5"></div>
+      </div>
+    </section>
+<!-- Contact Us Section -->
+    <section id="contactUs" class="d-none bg-black demo mt-5 mx-0 pt-5">
+      <div class="container mt-5">
+        <div class="row">
+          <form class="row text-center">
+            <h2 class="text-light">Contact Us...</h2>
+
+            <div oninput="" class="name col-md-6">
+              <input id="nameInput" type="search" placeholder="" class="" />
+              <!-- <div id="nameValid" class="text-success d-none">HELLO</div> -->
+            </div>
+            <div oninput="" class="email col-md-6">
+              <input
+                id="emailInput"
+                type="search"
+                placeholder="Email"
+                class=""
+              />
+              <!-- <div id="emailValid" class="text-success d-none">HELLO</div> -->
+            </div>
+            <div oninput="" class="phone col-md-6">
+              <input
+                id="phoneInput"
+                type="search"
+                placeholder="Phone Number"
+                class=""
+              />
+            </div>
+            <div oninput="" class="age col-md-6">
+              <input id="ageInput" type="search" placeholder="Age" class="" />
+            </div>
+            <div oninput="" class="pass col-md-6">
+              <input
+                id="passInput"
+                type="search"
+                placeholder="Password"
+                class=""
+              />
+            </div>
+            <div oninput="" class="re-pass col-md-6">
+              <input
+                id="repassInput"
+                type="search"
+                placeholder="repeat password"
+                class=""
+              />
+            </div>
+
+            <div class="text-center py-3 w-50 mx-auto">
+              <button
+                class="btn btn-outline-danger text-danger w-25"
+                type="submit"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/jquery-3.6.1.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/search.js" type="module"></script>
+  <script src="js/categories.js" type="module"></script>
+  <script src="js/area.js" type="module"></script>
+  <script src="js/ingredients.js" type="module"></script>
+  <script src="js/contact-us.js" type="module"></script>
+  <script src="js/validation.js" type="module"></script>
+</html>
