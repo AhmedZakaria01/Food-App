@@ -13,15 +13,14 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Yummy</title>
   </head>
-
   <body>
 <!-- Side Menu -->
-    <div id="sideMenu" class="side-menu">
+    <div id="sideMenu" class="side-menu ">
       <div class="inner-side-menu">
         <section class="left-section container bg-black text-danger">
           <div class="inner-left-top">
             <ul class="list-unstyled">
-              <li class="p-2 my-2 ms-2">
+              <li class="p-2 my-2 ms-2 ">
                 <a class="search-link text-decoration-none text-white">
                   Search</a
                 >
@@ -142,7 +141,7 @@
       </div>
     </section>
 <!-- Contact Us Section -->
-    <section id="contactUs" class="d-none bg-black demo mt-5 mx-0 pt-5">
+    <!-- <section id="contactUs" class="d-none bg-black demo mt-5 mx-0 pt-5">
       <div class="container mt-5">
         <div class="row">
           <form class="row text-center">
@@ -150,7 +149,7 @@
 
             <div oninput="" class="name col-md-6">
               <input id="nameInput" type="search" placeholder="" class="" />
-              <!-- <div id="nameValid" class="text-success d-none">HELLO</div> -->
+
             </div>
             <div oninput="" class="email col-md-6">
               <input
@@ -159,7 +158,7 @@
                 placeholder="Email"
                 class=""
               />
-              <!-- <div id="emailValid" class="text-success d-none">HELLO</div> -->
+
             </div>
             <div oninput="" class="phone col-md-6">
               <input
@@ -200,7 +199,53 @@
           </form>
         </div>
       </div>
-    </section>
+    </section> -->
+ 
+    <div id="contactUs" class="d-none bg-black mx-auto demo mt-5 mx-0 pt-5 container mt-5 pt-5 w-75 text-center ">
+      <h2 class="text-danger mt-5 ">Contact Us ...</h2>
+      <form id="userForm" class=" row gy-3 w-75 mx-auto text-whitemt-2 pt-2 text-center ">
+         <div class="col-md-6">
+            <input onkeyup="checkNameRegex()"  class="form-control rounded-0 " type="text" name="" id="uName">
+            <div class="name-invalid  rounded position-relative d-none">
+               <div class="p-2 rounded"> <span> Special Characters and Numbers not allowed</span> </div>
+
+            </div>
+         </div>
+         <div class="col-md-6">
+            <input onkeyup="checkEmailRegex()" class="form-control rounded-0" type="text" name="" id="uEmail">
+            <div class="email-invalid rounded position-relative d-none">
+               <div class="p-2 rounded"> <span> Enter valid email. *Ex [Ahmed.Ali@gmail.com]</span> </div>
+            </div>
+         </div>
+         <div class="col-md-6">
+            <input onkeyup="checkPhoneRegex()" class="form-control rounded-0" type="text" name="" id="uPhone">
+            <div class="phone-invalid rounded position-relative d-none">
+               <div class="p-2 rounded"> <span> Enter Valid Phone Number With Maximum 11 Digits Starting With [01] </span> </div>
+            </div>
+         </div>
+         <div class="col-md-6">
+            <input onkeyup="checkAgeRegex()" class="form-control" type="text" name="" id="uAge">
+            <div class="age-invalid rounded position-relative d-none">
+               <div class="p-2 rounded"> <span> Enter valid Age</span> </div>
+            </div>
+         </div>
+         <div class="col-md-6">
+            <input onkeyup="checkPasswordRegex()" class="form-control rounded-0 " type="password" name="" id="uPass">
+            <div class="password-invalid rounded position-relative d-none">
+               <div class="p-2 rounded"> <span> Enter valid password *Minimum eight characters, and at least 1 number </span> </div>
+            </div>
+         </div>
+         <div class="col-md-6">
+            <input onkeyup="checkRePasswordRegex()" class="form-control rounded-0" type="password"  name="" id="uRePass">
+            <div  class="rePassword-invalid rounded position-relative d-none">
+               <div class="p-2 rounded"> <span> Not Match With Password  </span> </div>
+            </div>
+         </div>
+         <button class="btn btn-outline-warning fs-6 w-25 mx-auto mt-4" type="submit">Submit</button>
+
+         
+      </form>
+   </div>
   </body>
   <script src="js/bootstrap.bundle.js"></script>
   <script src="js/jquery-3.6.1.min.js"></script>

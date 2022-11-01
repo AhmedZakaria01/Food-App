@@ -94,7 +94,6 @@ a:hover {
    height: 100% !important;
    display: flex;
    margin: 0px auto !important;
-   /* background-color: rgba(195, 63, 63, 0.358) !important; */
    color: #fff !important;
 }
 
@@ -133,7 +132,7 @@ a:hover {
    height: 100% !important;
    display: flex;
    margin: 0px !important;
-   background-color: rgba(88, 13, 179, 0.5);
+   background-color: rgba(0, 0, 0, 0.5);
    color: #fff !important;
 }
 
@@ -150,7 +149,7 @@ a:hover {
    height: 100% !important;
    display: flex;
    margin: 0px !important;
-   background-color: rgba(107, 208, 48, 0.5);
+   background-color: rgba(0, 0, 0, 0.5);
    color: #fff !important;
 }
 
@@ -160,7 +159,7 @@ a:hover {
    height: 100% !important;
    display: flex;
    margin: 0px !important;
-   background-color: rgba(124, 91, 132, 0.5);
+   background-color: rgba(0, 0, 0, 0.5);
    color: #fff !important;
 }
 #ingredientsFood {
@@ -168,7 +167,7 @@ a:hover {
 height: 100% !important;
 display: flex;
 margin: 0px !important;
-background-color: rgba(9, 107, 182, 0.5);
+background-color: rgba(0, 0, 0, 0.5);
 color: #fff !important;
 }
 
@@ -180,11 +179,32 @@ color: #fff !important;
 
 
 
+.name-invalid,.email-invalid,
+ .phone-invalid
+,.age-invalid,.password-invalid
+,.repassword-invalid {
+margin-top: 5px;
+background-color: #f9d7da !important;
+color: #823339 !important;
+}
+#contactUs input {
+background: #000;
+border: none;
+padding: 0px 5px 0px 5px !important;
+border-bottom:1px solid rgb(127, 123, 123);
+color: gray;
+}
+#contactUs input:focus {
+   outline:0px !important;
+   box-shadow: none !important;
 
+}
 
-
-
-
+/* #contactUs h2 {
+   bottom: 0; 
+   right: 50%;
+    transform: translate(50%,-50%);
+} */
 
 
 
@@ -193,28 +213,6 @@ color: #fff !important;
 .item {
    padding: 15px;
 }
-
-/* Food View */
-/* .recipes-info h5 {
-   background: #d4edd9;
-   padding: 5px;
-   font-size: 16px;
-   color: #000;
-   border-radius:5px;
-
-}
-.foodView article p {
-   font-size: 16px;
-}
-.tags span{
-   background: #f9d7d9;
-   padding: 6px;
-   font-size: 16px;
-   color: #000;
-   border-radius:5px;
-   margin: 0px 3px;
-} */
-
 /* Contact US */
 #contactUs .row  {
    width: 80%;
@@ -225,7 +223,6 @@ color: #fff !important;
 }
 .search-name input{
    width: 80% !important;
-
    border: 0px;
    border-bottom: 2px solid gray;
    background-color: transparent;

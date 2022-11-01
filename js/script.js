@@ -4,7 +4,8 @@ $(document).ready(function () {
     $("#sideMenu").animate({ left: `-${w}px` }, 0);
     $(".closeSideMenu").click(() => {
       if ($("#sideMenu").css("left") == "0px") {
-        $("#sideMenu").animate({ left: `-${w}px` });
+      $("#sideMenu").animate({ left: `-${w}px` });
+
       } else {
         $("#sideMenu").animate({ left: 0 });
       }
@@ -75,6 +76,95 @@ $(document).ready(function () {
       }
     });
 });
+
+
+
+// Contact-Us-Validation
+function checkNameRegex(e) {
+let uNameValue = $("#uName").val();
+let nameRegex = /^[a-z ?]{2,20}$/gi
+   if(!uNameValue.match(nameRegex)){
+   $("#uName").addClass("border-danger");
+   $(".name-invalid").addClass("d-block");
+   $(".name-invalid").removeClass("d-none");
+   e.preventDefault();
+
+   }else {
+   $("#uName").removeClass("border-danger");
+   $("#uName").addClass("border-success");
+   $(".name-invalid").addClass("d-none");
+   $(".name-invalid").removeClass("d-block");
+
+   }
+}
+function checkEmailRegex(e) {
+   let uEmailValue = $("#uEmail").val();
+   let emailRegex = /^[a-z0-9.?]{8,20}@(gmail|yahoo).com$/gi
+      if(!uEmailValue.match(emailRegex)){
+      $("#uEmail").addClass("border-danger");
+      $(".email-invalid").addClass("d-block");
+      $(".email-invalid").removeClass("d-none");
+      e.preventDefault();
+   
+      }else {
+      $("#uEmail").removeClass("border-danger");
+      $("#uEmail").addClass("border-success");
+      $(".email-invalid").addClass("d-none");
+      $(".email-invalid").removeClass("d-block");
+   
+      }
+}
+function checkPhoneRegex(e) {
+   let uPhoneValue = $("#uPhone").val();
+   let phoneRegex = /^01[0-9]{9}$/gi
+      if(!uPhoneValue.match(phoneRegex)){
+      $("#uPhone").addClass("border-danger");
+      $(".phone-invalid").addClass("d-block");
+      $(".phone-invalid").removeClass("d-none");
+      e.preventDefault();
+   
+      }else {
+      $("#uPhone").removeClass("border-danger");
+      $("#uPhone").addClass("border-success");
+      $(".phone-invalid").addClass("d-none");
+      $(".phone-invalid").removeClass("d-block");
+   
+      }
+}
+function checkAgeRegex(e) {
+   let ageValue = $("#uAge").val();
+   let ageRegex = /^[0-9]{2}$/gi
+      if(!ageValue.match(ageRegex)){
+      $("#uAge").addClass("border-danger");
+      $(".age-invalid").addClass("d-block");
+      $(".age-invalid").removeClass("d-none");
+      e.preventDefault();
+   
+      }else {
+      $("#uAge").removeClass("border-danger");
+      $("#uAge").addClass("border-success");
+      $(".age-invalid").addClass("d-none");
+      $(".age-invalid").removeClass("d-block");
+   
+      }
+}
+function checkPasswordRegex(e) {
+   let uPassValue = $("#uPass").val();
+   let passRegex = /[0-9]{10,20}[a-zA-Z]{1,10}$/g
+      if(!uPassValue.match(passRegex)){
+      $("#uPass").addClass("border-danger");
+      $(".password-invalid").addClass("d-block");
+      $(".password-invalid").removeClass("d-none");
+      e.preventDefault();
+      }else {
+      $("#uPass").removeClass("border-danger");
+      $("#uPass").addClass("border-success");
+      $(".password-invalid").addClass("d-none");
+      $(".password-invalid").removeClass("d-block");
+      }
+
+}
+
 
 // SHOW HIDE SECTIONS
 let w = $(".left-section").innerWidth();
