@@ -1,3 +1,9 @@
+
+$(".loading .sk-cube-grid").fadeOut(1000, ()=> {
+  $(".loading").fadeOut(100, ()=> {
+      $("body").css("overflow","auto")
+  })
+})
 $(document).ready(function () {
     // Side Menu Show / Hide
     let w = $(".left-section").innerWidth();
@@ -28,6 +34,7 @@ $(document).ready(function () {
   })();
 
   $("#home").children().click((e) => {
+
       for (let i = 0; i < meals.length; i++) {
         if ($(e.target).attr("src") == meals[i].strMealThumb) {
           let cartona = ``;
